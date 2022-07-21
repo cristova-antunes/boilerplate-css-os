@@ -1,0 +1,46 @@
+{
+  "name": "uxui_boilerplate-os-reactive",
+  "version": "1.0.0",
+  "description": "Repositório boilerplate para novos projetos OS Reactive",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "⏬⏬⏬ MAIN TASKS ⏬⏬⏬": "",
+    "css:scss": "node-sass source/styles -o dist/styles --importer node_modules/node-sass-import --output-style expanded --source-map-embed false",
+    "css:postcss": "postcss -u autoprefixer postcss-pxtorem postcss-combine-media-query postcss-discard-empty -r dist/styles/*",
+    "css:lint": "stylelint source/styles/**/*.scss --custom-syntax postcss-scss --fix --cache",
+    "utils:clean": "rimraf dist .stylelintcache",
+    "⏬⏬⏬ BUILD & WATCH TASKS ⏬⏬⏬": "",
+    "build:css": "run-s css:lint css:scss css:postcss",
+    "watch:css": "onchange -i -k \"source/styles/**/*\" -- run-s build:css",
+    "watch": "run-p watch:*",
+    "build": "run-p build:*",
+    "start": "run-p utils:clean watch:**"
+  },
+  "dependencies": {
+    "acorn": "^8.0.5",
+    "mkdirp": "^1.0.4",
+    "node-sass": "^7.0.1",
+    "node-sass-import": "^2.0.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^9.1.0",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-discard-empty": "^5.0.3",
+    "postcss-pxtorem": "^6.0.0",
+    "postcss-scss": "^4.0.3",
+    "rimraf": "^3.0.2",
+    "stylelint": "^14.5.3",
+    "stylelint-scss": "^4.1.0"
+  },
+  "author": "uDX Team | KinetIT",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2"
+  }
+}

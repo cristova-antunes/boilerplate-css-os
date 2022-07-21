@@ -1,0 +1,11 @@
+/* ===== General ===== */
+
+:root {
+  /* BRAND COLORS */
+  --color-example-1: #000;
+  --color-example-2: #ff0;
+  --color-example-3: #0ff;
+  --color-example-4: #fff0ff;
+  /* OSUI CSS VARS OVERRIDE */
+  --color-neutral-0: var(--color-neutral-0);
+}

@@ -1,0 +1,38 @@
+/* ================================================================ */
+/*  $0 - Root                                                       */
+/* ================================================================ */
+@import "1_abstract/*";
+/* ================================================================ */
+/*  $2 - Elements                                                   */
+/* ================================================================ */
+@import "2_elements/*";
+/* ================================================================ */
+/*  $3 - Components                                                 */
+/* ================================================================ */
+/*  $3.1 - Components - Custom Patterns                             */
+@import "3_patterns/_custom_patterns/*";
+/*  $3.2 - Components - Outsystems Widgets                          */
+@import "3_patterns/_outsystems_patterns/*";
+/*  $3.4 - Components - OutsystemsUI Patterns                       */
+@import "3_patterns/_outsystemsui_extended_patterns/_adaptative/*";
+@import "3_patterns/_outsystemsui_extended_patterns/_content/*";
+@import "3_patterns/_outsystemsui_extended_patterns/_interaction/*";
+@import "3_patterns/_outsystemsui_extended_patterns/_navigation/*";
+@import "3_patterns/_outsystemsui_extended_patterns/_numbers/*";
+@import "3_patterns/_outsystemsui_extended_patterns/_utilities/*";
+/* ================================================================ */
+/*  $4 - Layout                                                     */
+/* ================================================================ */
+@import "4_layout/*";
+/* ================================================================ */
+/*  $5 - Pages                                                      */
+/* ================================================================ */
+@import "5_pages/*";
+/* ================================================================ */
+/*  $6 - Utls                                                       */
+/* ================================================================ */
+@import "6_utils/*";
+/* ================================================================ */
+/*  $7 - Libs                                                       */
+/* ================================================================ */
+@import "7_libs/*";
